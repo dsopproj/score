@@ -1,0 +1,21 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppActionBar" parent="@android:style/Widget.ActionBar">
+        <item name="android:background">@drawable/action_bar</item>
+    </style>
+    
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@android:style/Theme.Black">
+        <item name="android:windowActionBar">true</item>
+        <item name="android:windowActionModeOverlay">false</item>
+        <item name="android:actionBarStyle">@style/AppActionBar</item>
+    </style>
+
+</resources>

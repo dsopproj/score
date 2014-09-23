@@ -5,8 +5,11 @@
 *.pydevproject
 .project
 .metadata
+.svn/
 bin/
 tmp/
+classes/
+gen/
 *.tmp
 *.bak
 *.swp

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_frame"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/style_mainmenu_button"
+        android:drawableLeft="@drawable/ico_mainmen_sy"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:text="主页" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#a7a7a7" />
+
+    <Button
+        android:id="@+id/btn_cxjs"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/style_mainmenu_button"
+        android:drawableLeft="@drawable/ico_mainmen_cxjs"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:text="查询检索" >
+    </Button>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#a7a7a7" />
+
+    <Button
+        android:id="@+id/btn_tjfx"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/style_mainmenu_button"
+        android:drawableLeft="@drawable/ico_mainmen_tjfx"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:text="统计分析" >
+    </Button>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#a7a7a7" />
+
+    <Button
+        android:id="@+id/btn_glcx"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/style_mainmenu_button"
+        android:drawableLeft="@drawable/ico_mainmen_zt"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:text="关联查询" >
+    </Button>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#a7a7a7" />
+
+    <Button
+        android:id="@+id/btn_sc"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/style_mainmenu_button"
+        android:drawableLeft="@drawable/ico_mainmen_sc"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:text="我的收藏" >
+    </Button>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#a7a7a7" />
+
+    <Button
+        android:id="@+id/btn_lxdt"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/style_mainmenu_button"
+        android:drawableLeft="@drawable/ico_mainmen_lxdt"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:text="离线地图" >
+    </Button>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#a7a7a7" />
+
+    <Button
+        android:id="@+id/btn_zxsj"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/style_mainmenu_button"
+        android:drawableLeft="@drawable/ico_mainmen_zxsj"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:text="在线升级" >
+    </Button>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#a7a7a7" />
+
+    <Button
+        android:id="@+id/btn_gy"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/style_mainmenu_button"
+        android:drawableLeft="@drawable/ico_mainmen_gy"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:text="关于" >
+    </Button>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#a7a7a7" />
+
+    <Button
+        android:id="@+id/btn_tc"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/style_mainmenu_button"
+        android:drawableLeft="@drawable/ico_mainmen_tc"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:text="退出" >
+    </Button>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#a7a7a7" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#a7a7a7" />
+
+</LinearLayout>

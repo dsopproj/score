@@ -1,0 +1,23 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="score.client.Left"
+    Loaded="UserControl_Loaded"
+	d:DesignWidth="240" d:DesignHeight="480">
+
+	<Grid x:Name="LayoutRoot" Background="#FFCDCDCD">
+		<StackPanel>
+			<Button Name="btnAccount" Content="Account" Height="30" Click="btnAccount_Click"  />
+            <Button Name="btnCash" Content="Cash" Height="30" Click="btnCash_Click" />
+            <Button Name="btnCashList" Content="CashList" Height="30" Click="btnCashList_Click" />
+            <Button Name="btnPublish" Content="Publish" Height="30" Click="btnPublish_Click" />
+            <Button Name="btnProductList" Content="ProductList" Height="30" Click="btnProductList_Click" />
+            <Button Name="btnAdvertisement" Content="Advertisement" Height="30" Click="btnAdvertisement_Click" />
+            <Button Name="btnAdvertisementConfig" Content="AdvertisConfig" Height="30" Click="btnAdvertisementConfig_Click" />
+            <Button x:Name="btnConfigUrl" Content="ConfigUrl" Height="30" Click="btnConfigUrl_Click" />
+		</StackPanel>
+		</Grid>
+</UserControl>
