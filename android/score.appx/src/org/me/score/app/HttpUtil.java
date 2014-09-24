@@ -4,7 +4,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 public class HttpUtil {
-	private static String baseUrl = "";
+	private static String baseUrl = "http://192.168.22.101:8086/score";
 
 	public static void setUrl(String baseUrl) {
 		HttpUtil.baseUrl = baseUrl;

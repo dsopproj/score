@@ -17,7 +17,7 @@
         android:id="@+id/ItemTitle"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/ItemImage"
+        android:layout_above="@+id/ItemImage"
         android:textSize="30dip" >
     </TextView>
 
@@ -25,8 +25,7 @@
         android:id="@+id/ItemText"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ItemTitle"
-        android:layout_toRightOf="@+id/ItemImage" >
+        android:layout_below="@+id/ItemImage" >
     </TextView>
 
 </RelativeLayout>

@@ -21,7 +21,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		btnProdList = (Button) this.findViewById(R.id.btnProductList);
 		btnProdList.setOnClickListener(this);
 		editTextUrl = (EditText) findViewById(R.id.editTextUrl);
-
+		editTextUrl.setText(HttpUtil.getUrl());
 	}
 
 	@Override
