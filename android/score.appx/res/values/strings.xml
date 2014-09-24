@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">score.app</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="main_page">this is main page</string>
+    <string name="product_list">to go product list page</string>
+    <string name="order_title">you can click order finish this.</string>
+
+</resources>
