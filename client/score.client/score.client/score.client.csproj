@@ -190,6 +190,7 @@
     <Resource Include="Frames\top_bar.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Frames\top_bar2.png" />
     <Resource Include="Resources\top_bar.png" />
   </ItemGroup>
   <ItemGroup>

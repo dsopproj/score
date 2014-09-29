@@ -4,24 +4,28 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    d:DesignHeight="300" d:DesignWidth="400">
+    d:DesignHeight="300" d:DesignWidth="400" Height="500" Width="400">
     
     <Grid x:Name="LayoutRoot" Background="White">
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="30*"/>
-            <RowDefinition Height="30*"/>
-            <RowDefinition Height="40*"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="30*"/>
-            <ColumnDefinition Width="70*"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="播放间隔" VerticalAlignment="Center"/>
-        <TextBox x:Name="txtInterval" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="0" TextWrapping="Wrap" Text="1" VerticalAlignment="Center" Width="120" />
-        <TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="播放速度" VerticalAlignment="Center" Grid.Row="1"/>
-        <TextBox x:Name="txtSpeed" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="0" TextWrapping="Wrap" Text="1" VerticalAlignment="Center" Width="120" Grid.Row="1" />
-        <Button x:Name="btnCommit" Content="commit" Grid.Column="1" HorizontalAlignment="Left" Margin="0" Grid.Row="2" VerticalAlignment="Center" Width="75" Background="#FF1F3B53" Click="btnCommit_Click"/>
+    	<StackPanel Margin="0" Orientation="Vertical">
+    		<StackPanel Orientation="Horizontal" Height="35">
+    			<TextBlock HorizontalAlignment="Right" TextWrapping="Wrap" Text="播放间隔" VerticalAlignment="Center" FontSize="21.333" Width="128" Height="35" Margin="0"/>
+    			<TextBox x:Name="txtInterval" HorizontalAlignment="Left" Height="23" Margin="0" TextWrapping="Wrap" Text="1" VerticalAlignment="Center" Width="120" />
+    		</StackPanel>
+    		<StackPanel Orientation="Horizontal" Height="35">
+    			<TextBlock HorizontalAlignment="Right" TextWrapping="Wrap" Text="播放速度" Height="35" Width="128" FontSize="21.333" VerticalAlignment="Center"/>
+    			<TextBox x:Name="txtSpeed" HorizontalAlignment="Left" Height="23" Margin="0" TextWrapping="Wrap" Text="1" VerticalAlignment="Center" Width="120" />
+    		</StackPanel>
+    		<Button x:Name="btnCommit" Content="commit" HorizontalAlignment="Right" Margin="0,0,116,0" VerticalAlignment="Center" Width="75" Background="#FF1F3B53" Click="btnCommit_Click" Height="22"/>
+
+    	</StackPanel>
 
     </Grid>
 </UserControl>

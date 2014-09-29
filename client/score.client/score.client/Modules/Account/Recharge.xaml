@@ -4,43 +4,60 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    d:DesignHeight="500" d:DesignWidth="400">
+    d:DesignHeight="500" d:DesignWidth="400" Width="400" Height="500">
 
     <Grid x:Name="LayoutRoot" Background="White">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="47*"/>
-            <ColumnDefinition Width="310*"/>
-            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="108*"/>
-            <RowDefinition Height="70*"/>
-            <RowDefinition Height="65*"/>
-            <RowDefinition Height="190*"/>
-            <RowDefinition Height="67*"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="24,10,0,0" Grid.Row="3" TextWrapping="Wrap" Text="充值金额：" VerticalAlignment="Top" Height="16" Width="55"/>
-        <TextBox Name="txtRechargeValue" Grid.Column="1" LostFocus="txtRechargeValue_LostFocus" HorizontalAlignment="Left" Height="23" Margin="96,6,0,0" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="24,38,0,0" Grid.Row="3" TextWrapping="Wrap" Text="手续费：" VerticalAlignment="Top" Height="16" Width="44"/>
-        <TextBox x:Name="txtfees" Grid.Column="1" HorizontalAlignment="Left" IsReadOnly="True" Height="23" Margin="96,34,0,0" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="24,69,0,0" Grid.Row="3" TextWrapping="Wrap" Text="总金额：" VerticalAlignment="Top" Height="16" Width="44"/>
-        <TextBox x:Name="txtAmountMoney" Grid.Column="1" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="96,65,0,0" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button Name="btnRecharge" Content="充值" Grid.Column="1" HorizontalAlignment="Left" Margin="130,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="75" Click="btnRecharge_Click" Height="22"/>
-        <Button Name="btnCancle" Content="取消" Grid.Column="1" HorizontalAlignment="Left" Margin="210,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="75" Click="btnCancle_Click" Height="22"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="221,38,0,0" Grid.Row="3" TextWrapping="Wrap" Text="充值金额的15%" VerticalAlignment="Top" Width="89" Foreground="#FFE26A6A" Height="16"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="24,4,0,0" TextWrapping="Wrap" Text="帐户积分：" VerticalAlignment="Top" Height="16" Width="55" Grid.Row="1"/>
-        <TextBox x:Name="txtScoreSum" Grid.Column="1" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="96,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="10,36,0,0" TextWrapping="Wrap" Text="可提现积分：" VerticalAlignment="Top" Height="16" Width="69" Grid.Row="1"/>
-        <TextBox x:Name="txtScoreUse" Grid.Column="1" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="96,32,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
-        <Button x:Name="btnWithDraw" Content="提现" Grid.Column="1" HorizontalAlignment="Left" Margin="221,34,0,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Click="btnWithDraw_Click" Height="22"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="10,7,0,0" TextWrapping="Wrap" Text="提现积分：" VerticalAlignment="Top" Height="16" Width="69" Grid.Row="2"/>
-        <TextBox x:Name="txtDraw" Grid.Column="1" HorizontalAlignment="Left" LostFocus="txtDraw_LostFocus" Height="23" Margin="95,3,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Row="2"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="10,35,0,0" TextWrapping="Wrap" Text="人民币：" VerticalAlignment="Top" Height="16" Width="69" Grid.Row="2"/>
-        <TextBox x:Name="txtDrawRMB" Grid.Column="1" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="95,31,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" Grid.Row="2"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="198,35,0,0" Grid.Row="2" TextWrapping="Wrap" Text="元" VerticalAlignment="Top" Height="16" Width="21"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="23,14,0,0" TextWrapping="Wrap" Text="用户名：" VerticalAlignment="Top" Height="16" Width="55"/>
-        <TextBox x:Name="txtUserName" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="95,10,0,0" TextWrapping="Wrap" Text="wolf" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnSearch" Content="查询" Grid.Column="1" HorizontalAlignment="Left" Margin="225,11,0,0" VerticalAlignment="Top" Width="75" Click="btnSearch_Click"  Height="22"/>
+    	<StackPanel Margin="18,19,76,171" Orientation="Vertical">
+    		<StackPanel Orientation="Horizontal" Height="35">
+    			<TextBlock HorizontalAlignment="Right" TextWrapping="Wrap" Text="用户名:" VerticalAlignment="Center" Height="35" Width="67" FontSize="18.667"/>
+    			<TextBox x:Name="txtUserName" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="wolf" VerticalAlignment="Center" Width="120" Margin="39,0,0,0"/>
+    			<Button x:Name="btnSearch" Content="查询" HorizontalAlignment="Left" Margin="0,1,0,0" VerticalAlignment="Center" Width="75" Click="btnSearch_Click"  Height="22"/>
+
+    		</StackPanel>
+    		<StackPanel Orientation="Horizontal" Height="35">
+    			<TextBlock HorizontalAlignment="Right" TextWrapping="Wrap" Text="帐户积分:" VerticalAlignment="Center" Height="35" Width="89" FontSize="18.667"/>
+    			<TextBox x:Name="txtScoreSum" IsReadOnly="True" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="118" Margin="17,0,0,0"/>
+    		</StackPanel>
+    		<StackPanel Orientation="Horizontal" VerticalAlignment="Center" Height="35">
+    			<TextBlock HorizontalAlignment="Right" TextWrapping="Wrap" Text="可提现积分:" VerticalAlignment="Center" Height="35" Width="105" FontSize="18.667"/>
+    			<TextBox x:Name="txtScoreUse" IsReadOnly="True" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120"/>
+    		</StackPanel>
+    		<StackPanel Orientation="Horizontal" Margin="0,0,43,0" Height="35">
+    			<TextBlock HorizontalAlignment="Right" TextWrapping="Wrap" Text="提现积分:" VerticalAlignment="Center" Height="35" Width="107" FontSize="18.667"/>
+    			<TextBox x:Name="txtDraw" HorizontalAlignment="Left" LostFocus="txtDraw_LostFocus" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120"/>
+    		</StackPanel>
+    		<StackPanel Orientation="Horizontal" Height="35">
+    			<TextBlock HorizontalAlignment="Right" TextWrapping="Wrap" Text="人民币:" VerticalAlignment="Center" Height="35" Width="84" FontSize="18.667"/>
+    			<TextBox x:Name="txtDrawRMB" IsReadOnly="True" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="100" Margin="23,0,0,0"/>
+    			<TextBlock HorizontalAlignment="Left" Margin="0,4,0,0" TextWrapping="Wrap" Text="元" VerticalAlignment="Center" Height="16" Width="21"/>
+    			<Button x:Name="btnWithDraw" Content="提现" HorizontalAlignment="Left" Margin="0,3,0,0" VerticalAlignment="Center" Width="75" Click="btnWithDraw_Click" Height="22"/>
+    		</StackPanel>
+    		<StackPanel Orientation="Horizontal" Margin="0,0,43,0" Height="35">
+    			<TextBlock HorizontalAlignment="Right" TextWrapping="Wrap" Text="充值金额:" VerticalAlignment="Center" Height="35" Width="107" RenderTransformOrigin="0.618,16.188" FontSize="18.667"/>
+    			<TextBox x:Name="txtRechargeValue" LostFocus="txtRechargeValue_LostFocus" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120"/>
+    		</StackPanel>
+    		<StackPanel Orientation="Horizontal" Height="35">
+    			<TextBlock HorizontalAlignment="Right" TextWrapping="Wrap" Text="手续费:" VerticalAlignment="Center" Height="35" Width="84" FontSize="18.667"/>
+    			<TextBox x:Name="txtfees" HorizontalAlignment="Left" IsReadOnly="True" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120" Margin="23,6,0,6"/>
+    			<TextBlock HorizontalAlignment="Left" Margin="0,4,0,0" TextWrapping="Wrap" Text="充值金额的15%" VerticalAlignment="Center" Width="89" Foreground="#FFE26A6A" Height="16"/>
+    		</StackPanel>
+    		<StackPanel Orientation="Horizontal" Height="35">
+    			<TextBlock HorizontalAlignment="Right" TextWrapping="Wrap" Text="总金额:" VerticalAlignment="Center" Height="35" Width="84" FontSize="18.667"/>
+
+    			<TextBox x:Name="txtAmountMoney" IsReadOnly="True" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120" Margin="24,0,0,0"/>
+    		</StackPanel>
+    		<StackPanel Margin="0" Orientation="Horizontal" Height="35" HorizontalAlignment="Right">
+    			<Button x:Name="btnRecharge" Content="充值" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="btnRecharge_Click" Height="22"/>
+    			<Button x:Name="btnCancle" Content="取消" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="btnCancle_Click" Height="22" Margin="4,0,0,0"/>
+    		</StackPanel>
+
+    	</StackPanel>
 
     </Grid>
 </UserControl>

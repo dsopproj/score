@@ -4,22 +4,21 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    d:DesignHeight="300" d:DesignWidth="800">
+    d:DesignHeight="300" d:DesignWidth="800" Width="400" Height="500">
 
     <Grid x:Name="LayoutRoot" Background="White">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="43*"/>
-            <ColumnDefinition Width="357*"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="45*"/>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left" Width="650">
-            <TextBlock Text="订单号：" HorizontalAlignment="Left" Margin="0,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Height="16" Width="44"/>
-            <TextBox x:Name="txtOrderNum" HorizontalAlignment="Left" Height="23" Margin="0,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256"/>
-            <Button Name="btnSearch" Content="查询" HorizontalAlignment="Left" Margin="0,16,0,0" VerticalAlignment="Top" Width="49" Click="btnSearch_Click" Grid.Column="1" Height="22"/>
-            <TextBlock Name="txtHaveTag" HorizontalAlignment="Left" Margin="0,16,0,0" TextWrapping="Wrap" Text="消费状态" Visibility="Collapsed"    VerticalAlignment="Top" Grid.Column="1" Height="16" Width="44"/>
-            <Button Name="btnConsume" Content="消费" HorizontalAlignment="Left" Margin="0,15,0,0" VerticalAlignment="Top" Width="48"  Visibility="Collapsed" Click="btnConsume_Click" Grid.Column="1" Height="22"/>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left" Width="400" Height="35" Margin="0,-213,0,0">
+            <TextBlock Text="订单号：" HorizontalAlignment="Left" Margin="0" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="1" Height="35" Width="89" FontSize="21.333"/>
+            <TextBox x:Name="txtOrderNum" HorizontalAlignment="Left" Height="30" Margin="0" TextWrapping="Wrap" VerticalAlignment="Center" Width="150"/>
+            <Button Name="btnSearch" Content="查询" HorizontalAlignment="Left" Margin="6,0,0,0" VerticalAlignment="Center" Width="49" Click="btnSearch_Click" Grid.Column="1" Height="30"/>
+            <TextBlock Name="txtHaveTag" HorizontalAlignment="Left" Margin="0" TextWrapping="Wrap" Text="消费状态"    VerticalAlignment="Center" Grid.Column="1" Height="16" Width="44"/>
+            <Button Name="btnConsume" Content="消费" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Center" Width="49" Click="btnConsume_Click" Grid.Column="1" Height="30"/>
         </StackPanel>
     </Grid>
 </UserControl>

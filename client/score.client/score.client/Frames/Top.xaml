@@ -7,22 +7,26 @@
 	x:Class="score.client.Top"
 	d:DesignWidth="640" d:DesignHeight="120" Height="120">
 
-    <Grid x:Name="LayoutRoot" Background="#FFECD3D3">
+    <Grid x:Name="LayoutRoot">
+    	<Grid.Background>
+    		<ImageBrush Stretch="Fill" ImageSource="top_bar2.png"/>
+    	</Grid.Background>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="53*"/>
-            <ColumnDefinition Width="120"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="169"/>
         </Grid.ColumnDefinitions>
         <Grid>
-            <StackPanel Orientation="Horizontal">
-
-                <Image Source="top_bar.png" ></Image>
-                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="32" >Starbucks Site: welcome to starbucks!</TextBlock>
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Margin="30,20,0,0" Width="400" >Starbucks Site: welcome to starbucks!</TextBlock>
             </StackPanel>
         </Grid>
         <Grid Grid.Column="1">
-            <StackPanel Orientation="Horizontal" >
-                <Button Name="btnSetting" Content="setting" Width="60" Click="btnSetting_Click" Margin="0,20" />
-                <Button Name="btnLogout" Content="LogOut" Width="60" Click="btnLogout_Click" Margin="0,20" />
+            <StackPanel Orientation="Horizontal" Background="Transparent" ><Button x:Name="btnSetting" Content="setting" Width="60" Click="btnSetting_Click" Margin="23,54,7,44" >
+	<Button.Background>
+		<ImageBrush Stretch="Fill"/>
+	</Button.Background>
+</Button>
+                <Button x:Name="btnLogout" Content="LogOut" Width="60" Click="btnLogout_Click" Margin="4,54,9,44" />
             </StackPanel>
         </Grid>
     </Grid>

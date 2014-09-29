@@ -54,7 +54,7 @@ public class ProductListActivity extends Activity implements
 				for (int i = 0; i < ja.length(); i++) {
 					JSONObject jo = ja.getJSONObject(i);
 					HashMap<String, Object> map = new HashMap<String, Object>();
-					map.put("icon", (R.drawable.viewtime));
+					map.put("icon", (R.drawable.viewitem));
 					map.put("ItemTitle", jo.getString("title"));
 					map.put("ItemText", jo.getString("id"));
 					mylist.add(map);
